@@ -22,6 +22,8 @@ def plot_dendrogram(Z, max_d=None):
     )
     if max_d:
         plt.axhline(y=max_d, c='k')
+    ax.set_xlabel("Data Points")
+    ax.set_ylabel("Distance")
     plt.show()
     st.pyplot(fig)
 
